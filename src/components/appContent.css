@@ -1,0 +1,44 @@
+.main {
+    z-index: 0;
+    position: relative;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    box-sizing: border-box;
+}
+
+.main > * {
+    z-index: 1;
+    position: relative;
+}
+
+.header-with-logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main__header-logo {
+    width: 200px;
+    transform: scale(1);
+    transform-origin: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.cluxa {
+    z-index: 0;
+    position: absolute;
+    top: 300px;
+    width: 1000px;
+    height: auto;
+    pointer-events: none;
+}
+
+.cluxa-right {
+    left: 0;
+    transform: translateX(-490px);
+}
+
+.cluxa-left {
+    right: 0;
+    transform: translateX(500px)
+}

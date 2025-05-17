@@ -1,0 +1,33 @@
+.iconed-title {
+  --icon-size: clamp(46px, 3vw, 92px);
+  --icon-margin-right: calc(var(--icon-size) / 4);
+  --icon-margin-bottom: calc(var(--icon-size) / -8);
+}
+
+.main__nav {
+    margin-top: 30px;
+    margin-left: 30;
+}
+
+.main__nav:first-child {
+    margin-top: 50px;
+}
+
+.iconed-title::before {
+    content: '';
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    display: inline-block;
+    margin-right: var(--icon-margin-right);
+    margin-bottom: var(--icon-margin-bottom);
+}
+
+.nav-main__title::before {
+    background-image: url("./icons/compase.svg");
+}
+
+.nav-additional__title::before {
+    background-image: url("./icons/star.svg");
+}

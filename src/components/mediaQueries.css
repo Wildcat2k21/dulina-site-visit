@@ -1,0 +1,24 @@
+@media (max-width: 800px) {
+    .header-with-logo {
+        flex-direction: column;
+    }
+
+    .main__header-logo {
+        transform: scale(0.75);
+    }
+}
+
+@media (max-width: 1000px) {
+    .main__bio-wrapper {
+        flex-direction: column;
+    }
+
+    .bio__leftside-content,
+    .bio__rightside-content {
+        width: 100%;
+    }
+
+  .bio__autor-image {
+    transform: scale(0.75);
+  }
+}
