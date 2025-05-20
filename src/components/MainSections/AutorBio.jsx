@@ -1,4 +1,4 @@
-import "./autorBio.css";
+import "./styles/autorBio.css";
 
 export default function AutorBio(){
     return (

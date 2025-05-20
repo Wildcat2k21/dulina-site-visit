@@ -1,4 +1,4 @@
-import './header.css';
+import './styles/header.css';
 import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 

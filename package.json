@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@davepagurek/p5.filterrenderer": "^0.0.17",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-p5": "^1.4.1",
     "react-typed": "^2.0.12"
   },
   "devDependencies": {

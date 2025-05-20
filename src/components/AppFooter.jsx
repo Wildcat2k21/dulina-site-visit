@@ -1,4 +1,4 @@
-import "./appFooter.css";
+import "./styles/appFooter.css";
 
 export default function AppFooter(){
     return (

@@ -1,4 +1,4 @@
-import "./chapter1.css";
+import "./styles/chapter1.css";
 
 export default function Chapter1(){
     return (

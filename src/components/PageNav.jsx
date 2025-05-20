@@ -1,4 +1,4 @@
-import "./mainNav.css";
+import "./styles/mainNav.css";
 
 export default function MainNav(){
     return (

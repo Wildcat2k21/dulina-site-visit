@@ -1,4 +1,4 @@
-import "./feedbacks.css";
+import "./styles/feedbacks.css";
 
 export default function Feedbacks(){
     return (
