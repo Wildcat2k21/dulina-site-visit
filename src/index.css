@@ -1,129 +1,124 @@
 @font-face {
-    font-family: 'Liter Regular';
-    src: url('../public/fonts/Liter-Regular.ttf');
+  font-family: 'Liter Regular';
+  src: url('../public/fonts/Liter-Regular.ttf');
 }
 
 @font-face {
-    font-family: 'Thicker Regular';
-    src: url('../public/fonts/Thicker-Regular.ttf');
+  font-family: 'Thicker Regular';
+  src: url('../public/fonts/Thicker-Regular.ttf');
 }
 
 @font-face {
-    font-family: 'Thicker Bold';
-    src: url('../public/fonts/Thicker-Variable-Roman.ttf');
+  font-family: 'Thicker Bold';
+  src: url('../public/fonts/Thicker-Variable-Roman.ttf');
 }
 
 @font-face {
-    font-family: 'Thicker Extrabold';
-    src: url('../public/fonts/Thicker-Extrabold.ttf');
+  font-family: 'Thicker Extrabold';
+  src: url('../public/fonts/Thicker-Extrabold.ttf');
 }
 
 @font-face {
-    font-family: 'Brusher Bold';
-    src: url('../public/fonts/Brusher Bold.otf');
+  font-family: 'Brusher Bold';
+  src: url('../public/fonts/Brusher Bold.otf');
 }
 
 :root {
-    /* Цвета */
-    --main-color: #FFF8F6;
-    --second-color: #E0D7D4;
-    --addition-color: #FFF2EE;
-    --black-main: #4A4A4A;
-    --gray-color: #d6d6d6;    
-    --text-color: #383737;
-    --active-color: #4573ff;
-    --visited-color: #8345ff;
-    --notice-header-text-bgc: #ffe0d55e;
+  /* Цвета */
+  --main-color: #fff8f6;
+  --second-color: #e0d7d4;
+  --addition-color: #fff2ee;
+  --black-main: #4a4a4a;
+  --gray-color: #d6d6d6;
+  --text-color: #383737;
+  --active-color: #4573ff;
+  --visited-color: #8345ff;
+  --notice-header-text-bgc: #ffe0d55e;
 
-    /* Шрифты */
-    --font-main: 'Liter Regular', 'Thicker Regular', 'Courier New', Courier, monospace;
-    --font-header: 'Liter Regular';
+  /* Шрифты */
+  --font-main: 'Liter Regular', 'Thicker Regular', 'Courier New', Courier, monospace;
+  --font-header: 'Liter Regular';
 
-    /* Размеры текста */
-    --font-size-base: clamp(20px, 1.5vw, 50px);
-    --line-height-base: clamp(30px, 3vw, 80px);
+  /* Размеры текста */
+  --font-size-base: clamp(20px, 1.5vw, 50px);
+  --line-height-base: clamp(30px, 3vw, 80px);
 
-    --h1-size: clamp(80px, 7vw, 150px);
-    --h2-size: clamp(46px, 4vw, 92px);
-    --h3-size: clamp(33px, 3vw, 66px);
-    --h4-size: clamp(25px, 2vw, 50px);
+  --h1-size: clamp(80px, 7vw, 150px);
+  --h2-size: clamp(46px, 4vw, 92px);
+  --h3-size: clamp(33px, 3vw, 66px);
+  --h4-size: clamp(25px, 2vw, 50px);
+  --h2-margin-top: calc(var(--h2-size) / 2);
+  --h2-margin-bottom: calc(var(--h2-size) / 2);
 
-    /* Контейнер */
-    --container-size: clamp(500px, 100vw, 2660px);
+  /* Контейнер */
+  --container-size: clamp(500px, 100vw, 2660px);
 }
 
 .italic-text {
-    font-style: italic;
+  font-style: italic;
 }
-/* 
-.left-side-header {
-    text-align: right;
-}
-
-.left-side-header__content {
-    display: inline-block;
-    width: 70%;
-} */
 
 body {
-    margin: 0;
-    font-family: var(--font-main);
-    background-color: var(--main-color);
+  margin: 0;
+  font-family: var(--font-main);
+  background-color: var(--main-color);
 }
 
 .app {
-    margin: auto;
-    width: var(--container-size);
-    box-sizing: border-box;
-    overflow-x: hidden;
+  margin: auto;
+  width: var(--container-size);
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .h-header {
-    font-family: var(--font-header);
-    font-weight: bold;
-    margin: 0;
-    color: var(--black-main);
+  font-family: var(--font-header);
+  font-weight: bold;
+  margin: 0;
+  color: var(--black-main);
 }
 
 .h1-header {
-    font-size: var(--h1-size);
+  font-size: var(--h1-size);
 }
 
 .h2-header {
-    font-size: var(--h2-size);
+  font-size: var(--h2-size);
+  margin-top: var(--h2-margin-top);
+  margin-bottom: var(--h2-margin-bottom);
 }
 
 .h3-header {
-    font-size: var(--h3-size);
+  font-size: var(--h3-size);
 }
 
 .h4-header {
-    font-size: var(--h4-size);
+  font-size: var(--h4-size);
 }
 
 a, p, span, li {
-    font-size: var(--font-size-base);
-    line-height: var(--line-height-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
 }
 
 ul {
-    margin: 0;
-    list-style: none;
+  margin: 0;
+  list-style: none;
 }
 
 .ul-decorated {
-    list-style: circle;
+  list-style: circle;
 }
 
 a {
-    text-decoration: none;
-    color: var(--active-color);
+  text-decoration: none;
+  color: var(--active-color);
 }
 
 a:hover {
-    text-decoration: underline !important;
+  text-decoration: underline !important;
 }
 
 a:visited {
-    color: var(--visited-color);
+  color: var(--visited-color);
 }

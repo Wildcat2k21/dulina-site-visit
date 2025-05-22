@@ -1,0 +1,8 @@
+@keyframes scaleImage{
+  from {
+    width: 320px;
+  }
+  to {
+    width: 66%;
+  }
+}

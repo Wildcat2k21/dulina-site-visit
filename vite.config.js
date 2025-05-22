@@ -8,6 +8,10 @@ export default defineConfig({
     alias: {
       // eslint-disable-next-line
       '@components': path.resolve(__dirname, 'src/components'),
+      // eslint-disable-next-line
+      '@tarotSketch': path.resolve(__dirname, 'src/components/TarotP5Sketch'),
+      // eslint-disable-next-line
+      '@sections': path.resolve(__dirname, 'src/components/sections'),
     },
   },
 });
