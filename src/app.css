@@ -47,22 +47,3 @@
 .section {
   padding-bottom: var(--h2-margin-bottom);
 }
-
-.day-card__sketch canvas {
-  width: 100% !important;
-  height: 100% !important;
-}
-
-.day-card__sketch {
-  position: relative;
-}
-
-.day-card__description {
-  position: absolute;
-  padding: 25px;
-  z-index: 99;
-  left: 50%;
-  top: 50%;
-  transform: translate(0%, -50%) scale(0.75);
-  background-color: rgba(255, 255, 255, 0.64);
-}

@@ -25,7 +25,10 @@ export const modifyByReverse = (cardProperties) => {
 
   for (let key in cardProperties) {
     const reversedPrefix = '--reversed';
-    modified[key + reversedPrefix] = { ...cardProperties[key], reverseFlag: true };
+    modified[key + reversedPrefix] = {
+      ...cardProperties[key],
+      reverseFlag: true,
+    };
   }
 
   return modified;

@@ -1,10 +1,9 @@
 import { useRef } from 'react';
-import Sketch from 'react-p5';
-
-import { calcTarotSketchSize, ResizeTarotSketch } from './helpers';
-
 import { cardProperties } from './consts';
 import { gaussian } from './math';
+import Sketch from 'react-p5';
+import { calcTarotSketchSize, ResizeTarotSketch } from './helpers';
+import './index.css';
 
 // Карта, которую хотим отобразить
 const renderQuality = 0.5;
@@ -56,7 +55,9 @@ export default function TarotSketch({ dayCard }) {
       item: rightCard,
     };
 
-    texturesRef.current.cardpack = p5.loadImage('/models/cards-package-map.png');
+    texturesRef.current.cardpack = p5.loadImage(
+      '/models/cards-package-map.png',
+    );
     texturesRef.current.plane = p5.loadImage('/models/plane-white-marble.jpg');
   };
 
@@ -64,7 +65,10 @@ export default function TarotSketch({ dayCard }) {
     parentRef.current = canvasParentRef;
     p5.pixelDensity(2);
 
-    const { width, height } = calcTarotSketchSize(canvasParentRef, renderQuality);
+    const { width, height } = calcTarotSketchSize(
+      canvasParentRef,
+      renderQuality,
+    );
     p5.createCanvas(width, height, p5.WEBGL).parent(canvasParentRef);
 
     cam.current = p5.createCamera();
@@ -80,13 +84,13 @@ export default function TarotSketch({ dayCard }) {
     p5.rotateY(angleRef.current);
 
     // координаты камеры по окружности
-    let radius = 50;
+    let radius = 10;
     let x = radius * p5.cos(angle);
     let z = radius * p5.sin(angle);
     cam.current.setPosition(x + 20, 250 + z, 400);
     cam.current.lookAt(20, 150, 0);
 
-    angle += 0.01;
+    angle += 0.02;
 
     // Освещение (Глобально)
     p5.ambientLight(50);
@@ -100,7 +104,8 @@ export default function TarotSketch({ dayCard }) {
     p5.translate(0, 100, 0);
     p5.noStroke();
 
-    const { width: planeWidth, height: planeHeight } = texturesRef.current.plane;
+    const { width: planeWidth, height: planeHeight } =
+      texturesRef.current.plane;
 
     p5.plane(planeWidth * 1.25, planeHeight * 1.25);
     p5.pop();
@@ -147,7 +152,9 @@ export default function TarotSketch({ dayCard }) {
       p5.shininess(5);
 
       p5.noStroke();
-      p5.rotateX(-p5.PI / 16 + rotIfRev(texturesRef.current.card.item.reverseFlag));
+      p5.rotateX(
+        -p5.PI / 16 + rotIfRev(texturesRef.current.card.item.reverseFlag),
+      );
       p5.rotateY(p5.HALF_PI);
       p5.texture(texturesRef.current.card.image);
       p5.model(modelsRef.current.card);
@@ -162,7 +169,11 @@ export default function TarotSketch({ dayCard }) {
 
       p5.noStroke();
       p5.rotateY(p5.HALF_PI * 1.3);
-      p5.rotateX(p5.PI - p5.HALF_PI / 8 + rotIfRev(texturesRef.current.cardLeft.item.reverseFlag));
+      p5.rotateX(
+        p5.PI -
+          p5.HALF_PI / 8 +
+          rotIfRev(texturesRef.current.cardLeft.item.reverseFlag),
+      );
       p5.texture(texturesRef.current.cardLeft.image);
       p5.model(modelsRef.current.card);
       p5.pop();
@@ -176,7 +187,11 @@ export default function TarotSketch({ dayCard }) {
 
       p5.noStroke();
       p5.rotateY(p5.HALF_PI);
-      p5.rotateX(p5.PI + p5.HALF_PI / 8 + rotIfRev(texturesRef.current.cardRight.item.reverseFlag));
+      p5.rotateX(
+        p5.PI +
+          p5.HALF_PI / 8 +
+          rotIfRev(texturesRef.current.cardRight.item.reverseFlag),
+      );
       p5.texture(texturesRef.current.cardRight.image);
       p5.model(modelsRef.current.card);
       p5.pop();
@@ -184,5 +199,12 @@ export default function TarotSketch({ dayCard }) {
   };
 
   const resizeTarotSketch = ResizeTarotSketch(parentRef, renderQuality);
-  return <Sketch preload={preload} setup={setup} draw={draw} windowResized={resizeTarotSketch} />;
+  return (
+    <Sketch
+      preload={preload}
+      setup={setup}
+      draw={draw}
+      windowResized={resizeTarotSketch}
+    />
+  );
 }

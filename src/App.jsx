@@ -1,10 +1,11 @@
 import Header from '@components/Header.jsx';
-import TarotSketch from '@tarotSketch';
 import PageNav from '@components/PageNav.jsx';
 import AutorBio from '@sections/AutorBio.jsx';
 import Chapter1 from '@sections/Chapter1.jsx';
 import Chapter2 from '@sections/Chapter2.jsx';
 import Chapter3 from '@sections/Chapter3.jsx';
+import TarotSketch from '@tarotSketch';
+import PsychoTest from './components/PsychoTest';
 import Feedbacks from '@sections/Feedbacks.jsx';
 import AppFooter from '@components/AppFooter.jsx';
 import './animations.css';
@@ -24,15 +25,25 @@ function getElementByDay(arr) {
 function App() {
   const modifiedCardProperties = modifyByReverse(cardProperties);
   const dayCard = getElementByDay(Object.values(modifiedCardProperties));
-  const cardDescription = dayCard.reverseFlag ? dayCard.reversed : dayCard.streight;
+  const cardDescription = dayCard.reverseFlag
+    ? dayCard.reversed
+    : dayCard.streight;
 
   return (
     <div className="app">
       <Header />
       <main className="main">
         {/* Боковые декоративные элементы страницы */}
-        <img src="./icons/cluxa-left.svg" className="cluxa cluxa-left" alt="left" />
-        <img src="./icons/cluxa-right.svg" className="cluxa cluxa-right" alt="right" />
+        <img
+          src="./icons/cluxa-left.svg"
+          className="cluxa cluxa-left"
+          alt="left"
+        />
+        <img
+          src="./icons/cluxa-right.svg"
+          className="cluxa cluxa-right"
+          alt="right"
+        />
 
         <PageNav />
         <AutorBio />
@@ -50,7 +61,7 @@ function App() {
 
         <section id="psycho-alalyze">
           <h2 className="h2-header h-header">🎭 Какой у меня психотип ?</h2>
-          <p>(Уже скоро)</p>
+          <PsychoTest />
         </section>
 
         <Feedbacks />

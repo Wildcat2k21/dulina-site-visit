@@ -1,0 +1,79 @@
+.psycho-test__decorated-btn {
+  --main-color: #3aacff;
+  --border-color: #1698f6;
+}
+
+.psycho-test__decorated-btn--selected {
+  --main-color: #00ff6a;
+  --border-color: #00dd5c;
+}
+
+.psycho-test {
+  width: 100%;
+  background-color: #e7e7e7;
+  text-align: center;
+  color: #6d6d6d;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px dashed #acacac;
+  box-sizing: border-box;
+  padding: 5%;
+}
+
+.psycho-test__notice {
+  width: 80%;
+}
+
+.psycho-test__notice > ul {
+  padding: 0;
+}
+
+.psycho-test__notice > p {
+  font-size: calc(var(--font-size-base) * 0.75);
+  line-height: calc(var(--font-size-base) * 1.25);
+}
+
+.psycho-test__notice > ul > li {
+  font-size: calc(var(--font-size-base) * 0.75);
+  line-height: calc(var(--font-size-base) * 1.25);
+}
+
+.psycho-test__upload-file {
+  background-color: var(--main-color);
+  box-sizing: border-box;
+  padding: 50px;
+  margin-top: 50px;
+  border-radius: 40px;
+}
+
+.psycho-test__decorated-btn {
+  --top: calc(2 * var(--font-size-base) / 3);
+  --left: calc(1.5 * var(--font-size-base));
+}
+
+.psycho-test__decorated-btn {
+  transition: 0.1s ease-in;
+  cursor: pointer;
+  background-color: var(--main-color);
+  font-size: calc(2 * var(--font-size-base) / 3);
+  padding: var(--top) var(--left);
+  text-wrap: nowrap;
+  border-radius: 100px;
+  border: 1px solid var(--border-color);
+  margin-top: 25px;
+}
+
+.psycho-test__decorated-btn:hover {
+  opacity: 0.8;
+}
+
+#upload {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+}

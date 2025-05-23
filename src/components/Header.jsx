@@ -44,11 +44,18 @@ export default function Header() {
   return (
     <header className="header">
       <div className="header__foreground"></div>
-      <img className="header__lamps-image" src="./images/lamps.png" alt="header-icon"></img>
+      <img
+        className="header__lamps-image"
+        src="./images/lamps.png"
+        alt="header-icon"
+      ></img>
       <div className="header__notice-wrapper">
         <h1 className="header__notice-main h-header h1-header">Узнайте</h1>
         <div className="header__notice-content">
-          <span className="header__notice-info h-header h4-header" ref={el}></span>
+          <span
+            className="header__notice-info h-header h4-header"
+            ref={el}
+          ></span>
         </div>
       </div>
     </header>
