@@ -1,5 +1,6 @@
 .telegram-logo__img {
   --logo-size: calc(var(--font-size-base) * 5);
+  --bg-color: #fff8f6;
 }
 
 .footer {
@@ -24,7 +25,7 @@
   position: relative;
   width: var(--logo-size);
   height: var(--logo-size);
-  background-color: var(--gray-color);
+  background-color: var(--bg-color);
   border-radius: 50%;
   background-image: url('./icons/telegram.svg');
   background-repeat: no-repeat;
@@ -37,5 +38,5 @@
   transform: translateX(-5px);
   padding: 5px 20px 5px 20px;
   border-radius: 5px;
-  background-color: var(--gray-color);
+  background-color: var(--bg-color);
 }

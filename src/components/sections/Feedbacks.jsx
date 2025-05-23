@@ -3,7 +3,7 @@ import './styles/feedbacks.css';
 export default function Feedbacks() {
   return (
     <section className="reviews section">
-      <h3 className="h3-header h-header reviews__title">Отзывы</h3>
+      <h3 className="reviews__title h3-header h-header">Отзывы</h3>
       <div className="reviews__list">
         <div className="reviews__item">
           <img className="reviews__image" src="./images/revier2.png" />

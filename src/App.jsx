@@ -8,6 +8,7 @@ import TarotSketch from '@tarotSketch';
 import PsychoTest from './components/PsychoTest';
 import Feedbacks from '@sections/Feedbacks.jsx';
 import AppFooter from '@components/AppFooter.jsx';
+import ModalContainer from './components/ModalContainer';
 import './animations.css';
 import './app.css';
 
@@ -31,6 +32,7 @@ function App() {
 
   return (
     <div className="app">
+      <ModalContainer />
       <Header />
       <main className="main">
         {/* Боковые декоративные элементы страницы */}

@@ -12,6 +12,10 @@ export default defineConfig({
       '@tarotSketch': path.resolve(__dirname, 'src/components/TarotP5Sketch'),
       // eslint-disable-next-line
       '@sections': path.resolve(__dirname, 'src/components/sections'),
+      // eslint-disable-next-line
+      '@utils': path.resolve(__dirname, 'src/utils'),
+      // eslint-disable-next-line
+      '@store': path.resolve(__dirname, 'src/store'),
     },
   },
 });
