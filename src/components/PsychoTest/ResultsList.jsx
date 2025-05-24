@@ -86,7 +86,7 @@ export default function PsychoSolution({ results }) {
       <h4 className="h-header h4-header psycho-solution__header">
         🔍 Ваш анализ
       </h4>
-      <pre>
+      <pre className="psycho-solution__text">
         <span ref={typedRef}></span>
       </pre>
     </div>

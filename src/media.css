@@ -16,6 +16,7 @@
   .bio__leftside-content,
   .bio__rightside-content {
     width: 100%;
+    padding: 5% 0%;
   }
 
   .bio__autor-image {

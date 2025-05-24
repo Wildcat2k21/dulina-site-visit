@@ -39,12 +39,7 @@
   padding: 0;
 }
 
-.psycho-test__notice > p {
-  font-size: calc(var(--font-size-base) * 0.75);
-  line-height: calc(var(--font-size-base) * 1.25);
-}
-
-.psycho-test__notice > ul > li {
+.psycho-test__notice > p, .psycho-test__notice > ul > li, .psycho-solution__text > span {
   font-size: calc(var(--font-size-base) * 0.75);
   line-height: calc(var(--font-size-base) * 1.25);
 }
@@ -91,4 +86,8 @@
 
 .psycho-solution__header {
   margin-top: 25px;
+}
+
+.psycho-solution__text {
+  text-wrap: wrap;
 }

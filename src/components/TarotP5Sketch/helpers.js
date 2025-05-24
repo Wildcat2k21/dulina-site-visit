@@ -21,15 +21,20 @@ export const ResizeTarotSketch = (parentRef, scale = 1) => {
 };
 
 export const modifyByReverse = (cardProperties) => {
-  const modified = structuredClone(cardProperties);
+  const newCardProps = {};
 
   for (let key in cardProperties) {
+    newCardProps[key] = {
+      ...cardProperties[key],
+      reverseFlag: false,
+    };
+
     const reversedPrefix = '--reversed';
-    modified[key + reversedPrefix] = {
+    newCardProps[key + reversedPrefix] = {
       ...cardProperties[key],
       reverseFlag: true,
     };
   }
 
-  return modified;
+  return newCardProps;
 };
