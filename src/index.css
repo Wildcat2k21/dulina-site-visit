@@ -1,26 +1,26 @@
 @font-face {
   font-family: 'Liter Regular';
-  src: url('../public/fonts/Liter-Regular.ttf');
+  src: url('/fonts/Liter-Regular.ttf');
 }
 
 @font-face {
   font-family: 'Thicker Regular';
-  src: url('../public/fonts/Thicker-Regular.ttf');
+  src: url('/fonts/Thicker-Regular.ttf');
 }
 
 @font-face {
   font-family: 'Thicker Bold';
-  src: url('../public/fonts/Thicker-Variable-Roman.ttf');
+  src: url('/fonts/Thicker-Variable-Roman.ttf');
 }
 
 @font-face {
   font-family: 'Thicker Extrabold';
-  src: url('../public/fonts/Thicker-Extrabold.ttf');
+  src: url('/fonts/Thicker-Extrabold.ttf');
 }
 
 @font-face {
   font-family: 'Brusher Bold';
-  src: url('../public/fonts/Brusher Bold.otf');
+  src: url('/fonts/Brusher Bold.otf');
 }
 
 :root {

@@ -17,7 +17,7 @@
 }
 
 .bio__rightside-content {
-  background-image: url('./icons/clux3.svg');
+  background-image: url('/icons/clux3.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

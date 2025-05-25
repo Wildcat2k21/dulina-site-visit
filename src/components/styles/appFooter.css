@@ -27,7 +27,7 @@
   height: var(--logo-size);
   background-color: var(--bg-color);
   border-radius: 50%;
-  background-image: url('./icons/telegram.svg');
+  background-image: url('/icons/telegram.svg');
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: center center;

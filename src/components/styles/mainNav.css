@@ -25,9 +25,9 @@
 }
 
 .nav-main__title::before {
-  background-image: url('./icons/compase.svg');
+  background-image: url('/icons/compase.svg');
 }
 
 .nav-additional__title::before {
-  background-image: url('./icons/star.svg');
+  background-image: url('/icons/star.svg');
 }

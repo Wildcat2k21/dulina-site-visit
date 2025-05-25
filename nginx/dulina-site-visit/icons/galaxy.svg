@@ -1,0 +1,30 @@
+<svg width="280.000000" height="373.000000" viewBox="0 0 280 373" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<ellipse id="circle_3" rx="49.580639" ry="88.495392" transform="matrix(0.707422 -0.706791 0.707422 0.706791 149.328 200.05)" fill="#000000" fill-opacity="0"/>
+	<ellipse id="circle_3" rx="49.580639" ry="88.495392" transform="matrix(0.707422 -0.706791 0.707422 0.706791 149.328 200.05)" stroke="#666666" stroke-opacity="1.000000" stroke-width="4.000000"/>
+	<ellipse id="ellipse" rx="99.193665" ry="39.772057" transform="matrix(0.707423 -0.706791 0.707423 0.706791 149.327 202.065)" fill="#000000" fill-opacity="0"/>
+	<ellipse id="ellipse" rx="99.193665" ry="39.772057" transform="matrix(0.707423 -0.706791 0.707423 0.706791 149.327 202.065)" stroke="#666666" stroke-opacity="1.000000" stroke-width="3.000000" stroke-dasharray="4.99 4.99"/>
+	<ellipse id="circle_1" cx="144.863281" cy="200.051514" rx="102.452782" ry="34.986015" fill="#000000" fill-opacity="0"/>
+	<ellipse id="circle_1" cx="144.863281" cy="200.051514" rx="102.452782" ry="34.986015" stroke="#666666" stroke-opacity="1.000000" stroke-width="2.000000"/>
+	<path id="star" d="M179.2 201.94C179.16 203.29 164.15 200.41 156.13 208.31C148.43 215.9 150.7 229.98 149.32 229.97C147.94 229.97 150.33 216.07 142.77 208.31C134.78 200.11 119.45 202.7 119.44 201.33C119.42 199.97 134.84 202.29 142.77 193.87C149.75 186.47 147.74 174.16 149.32 174.15C150.9 174.14 148.96 186.51 156.02 194.07C163.96 202.59 179.24 200.58 179.2 201.94Z" fill="#EDE6E5" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="star" d="M156.13 208.31C148.43 215.9 150.7 229.98 149.32 229.97C147.94 229.97 150.33 216.07 142.77 208.31C134.78 200.11 119.45 202.7 119.44 201.33C119.42 199.97 134.84 202.29 142.77 193.87C149.75 186.47 147.74 174.16 149.32 174.15C150.9 174.14 148.96 186.51 156.02 194.07C163.96 202.59 179.24 200.58 179.2 201.94C179.16 203.29 164.15 200.41 156.13 208.31Z" stroke="#666666" stroke-opacity="1.000000" stroke-width="4.000000"/>
+	<ellipse id="planet_7" cx="194.118286" cy="126.910645" rx="4.519750" ry="4.515714" fill="#666666" fill-opacity="1.000000"/>
+	<ellipse id="planet_7" cx="194.118286" cy="126.910645" rx="4.519750" ry="4.515714" stroke="#666666" stroke-opacity="1.000000" stroke-width="5.000000"/>
+	<ellipse id="planet_6" cx="104.254639" cy="129.317383" rx="3.938583" ry="3.935059" fill="#666666" fill-opacity="1.000000"/>
+	<ellipse id="planet_6" cx="104.254639" cy="129.317383" rx="3.938583" ry="3.935059" stroke="#666666" stroke-opacity="1.000000" stroke-width="5.000000"/>
+	<ellipse id="planet_5" cx="101.553955" cy="167.707520" rx="2.702780" ry="2.700366" fill="#666666" fill-opacity="1.000000"/>
+	<ellipse id="planet_5" cx="101.553955" cy="167.707520" rx="2.702780" ry="2.700366" stroke="#666666" stroke-opacity="1.000000" stroke-width="5.000000"/>
+	<ellipse id="planet_5-2" cx="211.929321" cy="262.597900" rx="6.835806" ry="6.829702" fill="#666666" fill-opacity="1.000000"/>
+	<ellipse id="planet_5-2" cx="211.929321" cy="262.597900" rx="6.835806" ry="6.829702" stroke="#666666" stroke-opacity="1.000000" stroke-width="5.000000"/>
+	<ellipse id="planet_4" cx="42.408325" cy="201.501953" rx="5.295370" ry="5.290644" fill="#666666" fill-opacity="1.000000"/>
+	<ellipse id="planet_4" cx="42.408325" cy="201.501953" rx="5.295370" ry="5.290644" stroke="#666666" stroke-opacity="1.000000" stroke-width="5.000000"/>
+	<ellipse id="planet_3" cx="191.415405" cy="214.105957" rx="2.702780" ry="2.700366" fill="#666666" fill-opacity="1.000000"/>
+	<ellipse id="planet_3" cx="191.415405" cy="214.105957" rx="2.702780" ry="2.700366" stroke="#666666" stroke-opacity="1.000000" stroke-width="5.000000"/>
+	<ellipse id="planet_2" cx="243.515747" cy="190.473877" rx="6.835806" ry="6.829702" fill="#666666" fill-opacity="1.000000"/>
+	<ellipse id="planet_2" cx="243.515747" cy="190.473877" rx="6.835806" ry="6.829702" stroke="#666666" stroke-opacity="1.000000" stroke-width="5.000000"/>
+	<ellipse id="planet_1" cx="75.816040" cy="241.798096" rx="2.702780" ry="2.700366" fill="#666666" fill-opacity="1.000000"/>
+	<ellipse id="planet_1" cx="75.816040" cy="241.798096" rx="2.702780" ry="2.700366" stroke="#666666" stroke-opacity="1.000000" stroke-width="5.000000"/>
+</svg>

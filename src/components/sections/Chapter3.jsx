@@ -4,7 +4,7 @@ export default function Chapter3() {
   return (
     <section className="main__chapter-3 section" id="chapter-3">
       <div className="header-with-logo">
-        <img className="main__header-logo" src="./icons/galaxy.svg"></img>
+        <img className="main__header-logo" src="/icons/galaxy.svg"></img>
         <h3 className="h-header h3-header left-side-header">
           Закон притяжения: почему рядом с нами оказываются не те люди ?
         </h3>

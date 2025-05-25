@@ -6,7 +6,7 @@ export default function Chapter1() {
       <div className="header-with-logo">
         <img
           className="main__header-logo"
-          src="./icons/crystal.svg"
+          src="/icons/crystal.svg"
           alt="crystal-icon"
         ></img>
         <h3 className="h3-header h-header left-side-header">

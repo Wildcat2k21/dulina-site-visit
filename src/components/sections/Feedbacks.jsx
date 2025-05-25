@@ -6,9 +6,9 @@ export default function Feedbacks() {
       <h3 className="reviews__title h3-header h-header">Отзывы</h3>
       <div className="reviews__list">
         <div className="reviews__item">
-          <img className="reviews__image" src="./images/revier2.png" />
+          <img className="reviews__image" src="/images/revier2.png" />
           <span className="review__name">Марина</span>
-          <img className="reviews__stars-mac" src="./images/stars.png" />
+          <img className="reviews__stars-mac" src="/images/stars.png" />
           <p className="review__feedback">
             Обратилась в сложный период, когда казалось, что всё рушится.
             Евгения не росто дала ответы на мои вопросы — она помогла увидеть
@@ -17,9 +17,9 @@ export default function Feedbacks() {
         </div>
 
         <div className="reviews__item">
-          <img className="reviews__image" src="./images/revier3.png" />
+          <img className="reviews__image" src="/images/revier3.png" />
           <span className="review__name">Анна</span>
-          <img className="reviews__stars-mac" src="./images/stars.png" />
+          <img className="reviews__stars-mac" src="/images/stars.png" />
           <p className="review__feedback">
             Все очень понравилось 🤗🌹, буду следить за осуществлением
             прогноза✨
@@ -27,9 +27,9 @@ export default function Feedbacks() {
         </div>
 
         <div className="reviews__item">
-          <img className="reviews__image" src="./images/revier1.png" />
+          <img className="reviews__image" src="/images/revier1.png" />
           <span className="review__name">Екатерина</span>
-          <img className="reviews__stars-mac" src="./images/stars.png" />
+          <img className="reviews__stars-mac" src="/images/stars.png" />
           <p className="review__feedback">
             Очень понравилась консультация! Получила ответы на все вопросы!
             Обязательно приду еще! 🙏 ❤️

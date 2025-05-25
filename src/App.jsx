@@ -37,12 +37,12 @@ function App() {
       <main className="main">
         {/* Боковые декоративные элементы страницы */}
         <img
-          src="./icons/cluxa-left.svg"
+          src="/icons/cluxa-left.svg"
           className="cluxa cluxa-left"
           alt="left"
         />
         <img
-          src="./icons/cluxa-right.svg"
+          src="/icons/cluxa-right.svg"
           className="cluxa cluxa-right"
           alt="right"
         />
