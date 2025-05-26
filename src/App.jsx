@@ -13,7 +13,7 @@ import './animations.css';
 import './app.css';
 
 import { modifyByReverse } from '@tarotSketch/helpers.js';
-import { cardProperties } from '@tarotSketch/consts.js';
+import { tarotDescriptions } from '@utils/tarot.js';
 
 function getElementByDay(arr) {
   const today = new Date();
@@ -24,8 +24,8 @@ function getElementByDay(arr) {
 }
 
 function App() {
-  const modifiedCardProperties = modifyByReverse(cardProperties);
-  const dayCard = getElementByDay(Object.values(modifiedCardProperties));
+  const modifiedTarotProperties = modifyByReverse(tarotDescriptions);
+  const dayCard = getElementByDay(Object.values(modifiedTarotProperties));
   const cardDescription = dayCard.reverseFlag
     ? dayCard.reversed
     : dayCard.streight;

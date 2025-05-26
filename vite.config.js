@@ -4,7 +4,7 @@ import path from 'path';
 
 export default defineConfig({
   build: {
-    outDir: 'nginx/dulina-site-visit',
+    outDir: 'deploy/dulina-site-visit',
   },
   plugins: [react()],
   resolve: {

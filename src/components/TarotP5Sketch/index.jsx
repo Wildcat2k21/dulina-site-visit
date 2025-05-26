@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { cardProperties } from './consts';
+import { tarotDescriptions } from '@utils/tarot';
 import { gaussian } from './math';
 import Sketch from 'react-p5';
 import { calcTarotSketchSize, ResizeTarotSketch } from './helpers';
@@ -36,8 +36,8 @@ export default function TarotSketch({ dayCard }) {
     modelsRef.current.card = p5.loadModel('/models/card.obj', true);
     modelsRef.current.cardpack = p5.loadModel('/models/cardpack.obj', true);
 
-    const leftCard = randArrElem(Object.values(cardProperties));
-    const rightCard = randArrElem(Object.values(cardProperties));
+    const leftCard = randArrElem(Object.values(tarotDescriptions));
+    const rightCard = randArrElem(Object.values(tarotDescriptions));
 
     // Загружаем текстуры
     texturesRef.current.card = {
